@@ -18,11 +18,11 @@ print("Also remember that anyone can access any user's account at anytime, "
 
 # SFTP
 host = "0.tcp.in.ngrok.io"
-port = 12272
+port = "XXXXX"    # removed port number to stop others from SSHing to our server
 transport = paramiko.Transport((host, port))
 
-username = "user"
-password = "1472"
+username = "XXXXXXXXXXXX"
+password = "XXXXXXXXXXXXXXXXXXXXXXXXX"
 transport.connect(username=username, password=password)
 sftp = paramiko.SFTPClient.from_transport(transport)
 
@@ -30,7 +30,7 @@ sftp = paramiko.SFTPClient.from_transport(transport)
 ssh = paramiko.SSHClient()
 ssh.load_system_host_keys()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(host, port=port, username='user', password='1472')
+ssh.connect(host, port=port, username=username, password=password)     # removed username and password to stop others from SSHing to our server
 
 
 # login/register
