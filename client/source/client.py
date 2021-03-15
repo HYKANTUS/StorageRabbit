@@ -5,7 +5,7 @@ from tkinter import filedialog
 import os
 import sys
 
-key_region = '0ae3a8c8f229.in'
+key_region = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # REMOVED
 
 print('\nWelcome to the StorageRabbit client.')
 print(f'links: http://storagerabbit.ml/ / https://{key_region}.ngrok.io/\n')
@@ -17,12 +17,12 @@ print("Also remember that anyone can access any user's account at anytime, "
       "\nso uploading confidential documents is not recommended\n")
 
 # SFTP
-host = "0.tcp.in.ngrok.io"
-port = 12272
+host = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # REMOVED
+port = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # REMOVED
 transport = paramiko.Transport((host, port))
 
-username = "user"
-password = "1472"
+username = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # REMOVED
+password = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # REMOVED
 transport.connect(username=username, password=password)
 sftp = paramiko.SFTPClient.from_transport(transport)
 
@@ -64,7 +64,7 @@ localpath = filepath.replace('/', ("\\"+"\\"))
 mypath = Path(localpath)
 pathname = mypath.name
 print(f'file selected: {pathname} from {localpath}\n')
-remotepath = f'/var/www/html/storage/{storagerabbit_username}/{pathname}'
+remotepath = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # REMOVED
 print(remotepath)
 try:
     sftp.put(localpath, remotepath)
