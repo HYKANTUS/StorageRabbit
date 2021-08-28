@@ -9,7 +9,7 @@
 
 #### I'll try my best to get my static IP provided by my ISP public, but from what I can see, you need to pay almost 3x the price for internet to get it.
 
-### Anyways, consider donating. As I said, even a dollar would keep the server running for more than a month. httpa://paypal.me/HYKANTUS
+### Anyways, consider donating. As I said, even a dollar would keep the server running for more than a month. https://paypal.me/HYKANTUS
 
 thanks to the one guy who reads this lol.
 
