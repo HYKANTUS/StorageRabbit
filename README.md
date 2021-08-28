@@ -13,6 +13,8 @@
 
 thanks to the one guy who reads this lol.
 
+## Outdated stuff:
+
 ### website:
 
 [StorageRabbit](http://storagerabbit.ml/)
